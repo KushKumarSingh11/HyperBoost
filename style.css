@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+:root{
+    --primary-color: #0099FF;
+    --background-color: #202020;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: var(--background-color
+    );
+}
+
+/*----Navigation----*/
+
+.logo{
+    width: auto;
+    height: 40px;
+}
+
+nav {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav ul{
+    display: flex;
+    justify-self: right;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1.8vh;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+nav ul li a:hover{
+color:rgba(255, 255, 255, 0.7);
+}
+
+.background{
+    background-image: url('./Images/BG.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.intro{
+    text-align: center;
+    position: relative;
+    margin-top: 8%;
+    font-size: 1.5em;
+}
+.intro h1{
+    padding: 40px;
+    color: white;
+}
+.intro hr{
+    border: 2px solid var(--primary-color);
+    width: 200px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    color: white;
+    justify-self: left;
+    height: 40vh;
+    margin-bottom: 8%;
+}
+
+.about div h1{
+    font-size: 1.5em;
+    padding: 30px 0px;
+}
+.about div p{
+    font-size: 1em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.portfolio1 img{
+    width: 100%;
+    height: auto;
+}
+
+.portfolio1 .content{
+    margin: auto 10vw;
+}
+
+.portfolio1 hr{
+    width: 10vw;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    margin-top: 0.1vh;
+    margin-bottom: 4vh;
+}
+
+.portfolio1 h1{
+    font-size: 3vw;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 0vw;
+    color: white;
+}
+.portfolio1 p{
+    font-size: 1em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0 20%;
+    grid-gap: 2em;
+    margin: 5% 20%;
+
+}
+.service div{
+    height: 30vh;
+    width: 100%;
+    background-color: #373737;
+    border-radius: 30px;
+    filter: drop-shadow(0px 3px 50px rgba(0,0,0,0.7));
+}
+
+.service h1 {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 7em;
+}
+
+
+
+
+.img1 {
+    background-image: url('./Images/Intersection 10.png');
+    background-position: center;
+    background-blend-mode: multiply;
+    transition: ease-in-out 0.3s;
+}
+.img2 {
+    background-image: url('./Images/Intersection 9.png');
+    background-position: center;
+    background-color: #000000;
+    background-blend-mode: multiply;
+    transition: ease-in-out 0.3s;
+}
+.img3 {
+    background-image: url('./Images/Intersection 7.png');
+    background-position: center;
+    background-color: #000000;
+    background-blend-mode: multiply;
+    transition: ease-in-out 0.3s;
+}
+.img4 {
+    background-image: url('./Images/Intersection 6.png');
+    background-position: center;
+    background-color: #000000;
+    background-blend-mode: multiply;
+    transition: ease-in-out 0.3s;
+}
+.img5 {
+    background-image: url('./Images/Intersection 8.png');
+    background-position: center;
+    background-color: #000000;
+    background-blend-mode: multiply;
+    transition: ease-in-out 0.3s;
+}
+.img6 {
+    background-image: url('./Images/Intersection 11.png');
+    background-position: center;
+    background-color: #000000;
+    background-blend-mode: multiply;
+    transition: ease-in-out 0.3s;
+}
+
+.img1:hover {
+    background-color: #ffffff;
+    background-blend-mode: none;
+}
+.img2:hover {
+    background-color: #ffffff;
+    background-blend-mode: none;
+}
+.img3:hover {
+    background-color: #ffffff;
+    background-blend-mode: none;
+}
+.img4:hover {
+    background-color: #ffffff;
+    background-blend-mode: none;
+}
+.img5:hover {
+    background-color: #ffffff;
+    background-blend-mode: none;
+}
+.img6:hover {
+    background-color: #ffffff;
+    background-blend-mode: none;
+}
