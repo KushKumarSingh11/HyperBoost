@@ -13,11 +13,10 @@
 }
 
 body{
-    background-color: var(--background-color
-    );
+    background-color: var(--background-color);
 }
 
-/*----Navigation----*/
+/*----------------------------------------Navigation----------------------------------------*/
 
 .logo{
     width: auto;
@@ -69,6 +68,10 @@ color:rgba(255, 255, 255, 0.7);
     background-position: center;
 }
 
+
+/*-------------------------------------------About--------------------------------------*/
+
+
 .intro{
     text-align: center;
     position: relative;
@@ -109,6 +112,9 @@ color:rgba(255, 255, 255, 0.7);
     color: rgba(255, 255, 255, 0.5);
 }
 
+/*-------------------------------------------Portfolio--------------------------------------*/
+
+
 .portfolio1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -146,33 +152,31 @@ color:rgba(255, 255, 255, 0.7);
 }
 
 
+/*-------------------------------------------Services--------------------------------------*/
+
 
 .service{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    margin: 0 20%;
-    grid-gap: 2em;
+    grid-gap: 2vw;
     margin: 5% 20%;
-
 }
+
 .service div{
-    height: 30vh;
+    height: 15vw;
     width: 100%;
     background-color: #373737;
-    border-radius: 30px;
+    border-radius: 1vw;
     filter: drop-shadow(0px 3px 50px rgba(0,0,0,0.7));
 }
 
 .service h1 {
-    font-size: 16px;
+    font-size: 1.2vw;
     color: white;
     text-align: center;
-    margin-top: 7em;
+    margin-top: 7vw;
 }
-
-
-
 
 .img1 {
     background-image: url('./Images/Intersection 10.png');
@@ -239,4 +243,102 @@ color:rgba(255, 255, 255, 0.7);
 .img6:hover {
     background-color: #ffffff;
     background-blend-mode: none;
+}
+
+/*--------------------------------Team---------------------------------------*/
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 8vw;
+    margin: 5% 30% 0 30%;
+}
+.team div{
+    height: 20vw;
+    width: 100%;
+    background-color: #373737;
+    border-radius: 1vw;
+    filter: drop-shadow(0px 3px 50px rgba(0,0,0,0.7));
+}
+.team h1 {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 7em;
+}
+.team .lav {
+    background-image: url('./Images/Lav.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.team .kush {
+    background-image: url('./Images/Kush.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30%;
+    grid-column-gap: 8em;
+    margin-top: 3em;
+}
+.name h3 {
+    font-size: 1.2vw;
+    margin-bottom: 0.2em;
+    color: white;
+}
+.name h5 {
+    font-size: 0.8vw;
+    margin-bottom: 0.5em;
+    color: white;
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+/*---------------------------------------------form--------------------------------*/
+
+form{
+    display: grid;
+    grid-template-row: repeat(5, 1fr);
+    margin: 5% 30%;
+}
+
+form input, form textarea{
+    margin: 1.5% 0;
+    height: 5em;
+    border-radius: 1vw;
+    background-color: #161616;
+    border-style: solid;
+    border-color: #9C9C9C;
+    border-width: 1px;
+}
+
+form ::placeholder{
+    padding: 1vw 2vw;
+    font-size: 1.5em;
+    color: #4A4A4A;
+    font-weight: 400;
+}
+
+form .btn{
+    height: 3em;
+    width: 200px;
+    margin: 5% auto;
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--primary-color);;
+    font-weight: 700;
+    border-style: none;
+}
+
+footer{
+    background-color: black;
+    height: 150px;
+}
+
+footer img{
+    margin: 50px;
 }
